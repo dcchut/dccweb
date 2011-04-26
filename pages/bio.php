@@ -10,7 +10,10 @@ function get_page_content()
 {
 	ob_start();
 	?>
-	<b>my bio</b><br />
+	<div class="mheading">my bio</div>
+	
+	<p class="lspace">think of something interesting here.</p>
+	
 	<?php
 	return ob_get_clean();
 }
