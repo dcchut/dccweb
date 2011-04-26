@@ -12,12 +12,12 @@ $request = end($request);
 
 // is our request a "good" thing?
 if (!preg_match('/^[\w @.-]*$/', $request)
-	|| !file_exists(dirname(__FILE__).'/pages/'.$request.'.php')) {
+	|| !file_exists(dirname(__FILE__) . '/pages/'.$request.'.php')) {
 	$request = 'bio';
 }
 
 // include our request
-require_once('/pages/' . $request . '.php');
+require_once(dirname(__FILE__) . '/pages/' . $request . '.php');
 
 // do the "magic"
 echo show_site(get_page_content(), get_page_title());
