@@ -3,7 +3,7 @@
 // by dcc
 
 // introductory configuration
-define('SITE_ROOT', 'http://vnq.nitrated.net/');
+define('SITE_ROOT', 'http://dcc.nitrated.net/');
 require_once('site.php');
 
 // get the last portion of request URI
