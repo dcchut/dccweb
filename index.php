@@ -21,3 +21,6 @@ require_once(dirname(__FILE__) . '/pages/' . $request . '.php');
 
 // do the "magic"
 echo show_site(get_page_content(), get_page_title());
+
+// lets increase the hit counter
+file_put_contents('hits', "\n", LOCK_EX | FILE_APPEND);
