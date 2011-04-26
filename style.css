@@ -1,0 +1,64 @@
+html { 
+	overflow: -moz-scrollbars-vertical;
+	overflow-x: auto; 
+}
+
+body {
+	background-color: white;
+	font: 12pt verdana;
+}
+
+#main {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	padding-top: 0px;
+	border: 1px solid #000000;
+	background-color: #DAD7E0;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/* top text */
+p.top {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font: 17pt verdana;
+	padding-bottom: 5px;
+}
+
+p.lspace {
+	line-height: 200%;
+}
+
+div.mheading {
+	font: 15pt verdana;
+}
+
+span.heading {
+	font-weight: bold;
+}
+
+
+
+/* make links <AWESOME> */
+a:link {
+	text-decoration: underline;
+	color: black;
+}
+
+a:visited {
+	text-decoration: underline;
+	color: black;
+}
+
+a:active {
+	text-decoration: underline;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline; 
+	color: red;
+}
