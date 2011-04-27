@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background-color: #D4D4D4;
+	background-color: #EEEFE6;
 	font: 12pt verdana;
 }
 
@@ -23,7 +23,7 @@ body {
 #content {
 	background-color: #E1EFD9;
 	padding: 10px;
-	padding-bottom: 0px;
+	padding-bottom: 5px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	border: 1px solid #000000;
