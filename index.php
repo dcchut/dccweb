@@ -22,5 +22,12 @@ require_once(dirname(__FILE__) . '/pages/' . $request . '.php');
 // do the "magic"
 echo show_site(get_page_content(), get_page_title());
 
-// lets increase the hit counter
-file_put_contents('hits', "\n", LOCK_EX | FILE_APPEND);
+// get our lock file
+$f = fopen("/tmp/dccweb.lock", "w") or die();
+
+// increase the hit counter
+if (flock($f, LOCK_EX)) {
+	file_put_contents('hits', "\n", LOCK_EX | FILE_APPEND);
+}
+
+fclose($f);
