@@ -13,10 +13,12 @@ function show_site($content, $title = ''){
 	</head>
 	<body>
 		<div id="main">
-			<p class="top"><span class="heading">dcchut's profile</span> - <a href="<?php echo SITE_ROOT; ?>bio">bio</a>
+			<br />
+			<div id="top"><p class="top"><span class="heading">dcchut's profile</span> - <a href="<?php echo SITE_ROOT; ?>bio">bio</a>
 														  - <a href="<?php echo SITE_ROOT; ?>projects">projects</a> 
-														  - <a href="<?php echo SITE_ROOT; ?>contact">contact</a></p>
-			 <?php echo $content; ?>
+														  - <a href="<?php echo SITE_ROOT; ?>contact">contact</a></p></div>
+			 <br />
+			 <div id="content"><?php echo $content; ?></div>
 		</div>
 	</body>
 </html>

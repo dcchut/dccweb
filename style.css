@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background-color: white;
+	background-color: #D4D4D4;
 	font: 12pt verdana;
 }
 
@@ -15,9 +15,28 @@ body {
 	padding: 15px;
 	padding-top: 0px;
 	border: 1px solid #000000;
-	background-color: #DAD7E0;
+	background-color: #E7D9EF;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+}
+
+#content {
+	background-color: #E1EFD9;
+	padding: 10px;
+	padding-bottom: 0px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #000000;
+}
+
+#top {
+	background-color: #E1EFD9;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #000000;
 }
 
 /* top text */
