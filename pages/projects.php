@@ -33,6 +33,10 @@ function get_page_content()
 	
 	<p class="lspace"><b>dccweb</b> - <a href="https://github.com/dcchut/dccweb">github</a><br />
 	dccweb is <i>this</i> website, which is in some sense a project.</p>
+	
+	<p class="lspace"><b>peweb</b> - <a href="http://pe.nitrated.net/">link</a> - <a href="https://github.com/dcchut/peweb">github</a><br />
+	peweb is a service which provides a programmer-friendly way to access <a href="http://www.teamliquid.net">Team Liquid</a> streams.  Still need a bit of work.</p>
+	
 	<?php
 	return ob_get_clean();
 }
