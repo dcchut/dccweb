@@ -9,7 +9,7 @@ function show_site($content, $title = ''){
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<title>dcchut - <?php echo $title; ?></title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT; ?>style.css" />
 	</head>
 	<body>
 		<div id="main">
