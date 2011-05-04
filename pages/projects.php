@@ -34,7 +34,7 @@ function get_page_content()
 	<p class="lspace"><b>dccweb</b> - <a href="https://github.com/dcchut/dccweb">github</a><br />
 	dccweb is <i>this</i> website, which is in some sense a project.</p>
 	
-	<p class="lspace"><b>peweb / teamliquid_analyser</b> - <a href="http://pe.nitrated.net/">link</a> - <a href="https://github.com/dcchut/peweb">peweb github</a> - <a href="https://github.com/dcchut/teamliquid_analyser">teamliquid_analyser</a><br />
+	<p class="lspace"><b>peweb / teamliquid_analyser</b> - <a href="http://pe.nitrated.net/">link</a> - <a href="https://github.com/dcchut/peweb">peweb github</a> - <a href="https://github.com/dcchut/teamliquid_analyser">teamliquid_analyser github</a><br />
 	peweb is a service which provides a programmer-friendly way to access <a href="http://www.teamliquid.net">Team Liquid</a> streams.  teamliquid_analyser uses data fetched from
     peweb to display some pretty graphs using matplotlib.</p>
 	
