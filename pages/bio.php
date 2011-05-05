@@ -12,9 +12,9 @@ function get_page_content()
 	?>
 	<div class="mheading">my bio</div>
 	
-	<p class="lspace">hi, I'm Rob, a <?php echo get_age(); ?> year old student studying <a href="http://ms.unimelb.edu.au">mathematics</a> as an undergraduate at the <a href="http://www.unimelb.edu.au">university of melbourne</a>.
+	<p class="lspace">hi, I'm rob, a <?php echo get_age(); ?> year old student studying <a href="http://ms.unimelb.edu.au">mathematics</a> as an undergraduate at the <a href="http://www.unimelb.edu.au">university of melbourne</a>.
 	I enjoy programming in PHP, Python and C# and I am actively interested in learning new things and being the best that I can be.  
-	in my spare time, I enjoy rocking the electric bass for <a href="http://www.myspace.com/the.rapalas">The Rapalas</a>, playing Civilization V and reading about computer science.</p>
+	in my spare time, I enjoy rocking the electric bass for <a href="http://www.myspace.com/the.rapalas">The Rapalas</a>, playing Civilization V, reading about computer science and long walks on moonlit beaches.</p>
 	
 	<?php
 	return ob_get_clean();
