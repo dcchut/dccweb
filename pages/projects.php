@@ -20,6 +20,11 @@ function get_page_content()
 	<p class="lspace"><b>vnq</b> - <a href="http://vnq.nitrated.net/">link</a> - <a href="https://github.com/dcchut/vnq">github</a><br />
 	vnq is an online quote "database" which I made for a IRC channel that I frequent.  it seems to work.</p>
 	
+	<p class="lspace"><b>uom subject battle</b> - <a href="http://dj.nitrated.net/">link</a> - <a
+href="https://github.com/dcchut/uom_subject_battle">github</a><br />
+	uom subject subject is my first experiment with web development in python - the idea is that people vote on science subjects offered at uom, with
+rankings being done using an ELO based system.</p> 
+
 	<p class="lspace"><b>mcount</b> - <a href="https://github.com/dcchut/mcount">github</a><br />
 	mcount is a very simple python application that counts the number of music files in a directory (good for bragging rights).</p>
 	
