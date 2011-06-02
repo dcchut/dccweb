@@ -39,7 +39,7 @@ rankings being done using an ELO based system.</p>
 	<p class="lspace"><b>dccweb</b> - <a href="https://github.com/dcchut/dccweb">github</a><br />
 	dccweb is <i>this</i> website, which is in some sense a project.</p>
 	
-	<p class="lspace"><b>teamliquid_streamer_graph / teamliquid_analyser</b> - <a href="http://pe.nitrated.net/">link</a> - <a
+	<p class="lspace"><b>teamliquid_streamer_graph / teamliquid_analyser</b> - <a href="http://pe.nitrated.net/graph/">link</a> - <a
 href="https://github.com/dcchut/teamliquid_streamer_graph">teamliquid_streamer_graph github</a> - <a href="https://github.com/dcchut/teamliquid_analyser">teamliquid_analyser github</a><br />
 	teamliquid_streamer_graph is a pretty service which not only provides a programmer-friendly way to access <a href="http://www.teamliquid.net">Team
 Liquid</a> streams but also displays the data in realtime.  teamliquid_analyser uses data fetched from
