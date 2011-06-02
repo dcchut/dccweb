@@ -16,7 +16,7 @@ function get_page_content()
 	I enjoy programming in PHP, Python and C# and I am actively interested in learning new things and being the best that I can be.  
 	in my spare time, I enjoy rocking the electric bass for <a href="http://www.myspace.com/the.rapalas">The Rapalas</a>, playing Civilization V, reading about computer science and taking long walks on moonlit beaches.</p>
 	
-	<p class="lspace">2/06/2011: current status, studying for exams!  good luck.</p>
+	<p class="lspace">2/06/2011: currently studying for exams!  good luck.</p>
 	
 	<?php
 	return ob_get_clean();
