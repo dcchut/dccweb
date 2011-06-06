@@ -59,7 +59,6 @@ class RequestManager {
     
     // run the method w/ args
     call_user_func_array(array($c, $this->_method), $this->_args);
-    //$c->{$this->_method}($this->_args);
     
     // run the after method
     $c->After();
