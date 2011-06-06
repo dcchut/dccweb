@@ -8,3 +8,5 @@ as an undergraduate at the <a href="http://www.unimelb.edu.au">university of mel
 	playing Civilization V, reading about computer science and taking long walks on moonlit beaches.</p>
 
 <p class="lspace">2/06/2011: currently studying for exams!  good luck.</p>
+
+<p class="lspace">6/06/2011: changed entire site architecture, check out the new <a href="http://github.com/dcchut/dccweb">source</a></p> 
