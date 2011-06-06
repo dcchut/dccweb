@@ -2,25 +2,29 @@
 // dcc.nitrated.net
 // by dcc
 
-// introductory configuration
-define('SITE_ROOT', 'http://dcc.nitrated.net/');
-require_once('site.php');
+// our autoloading function
+spl_autoload_register(function($class_name) {
+  $file_name = __DIR__ . '/' . strtr($class_name, '\\', '/') . '.php';
+  
+  // does this file exist?
+  if (file_exists($file_name)) {
+    require($file_name);
+  }
+});
 
-// get the last portion of request URI
-$request = explode("/", $_SERVER['REQUEST_URI']);
-$request = end($request);
+// parse this URI
+$requestManager = new DccLib\RequestManager($_SERVER['PATH_INFO'],
+                                                    'DccSite\\Controllers\\',
+                                                    'Bio');
+                                                    
+// get a view manager
+$viewManager = new DccLib\ViewManager('DccSite\\Views\\');
 
-// is our request a "good" thing?
-if (!preg_match('/^[\w @.-]*$/', $request)
-	|| !file_exists(dirname(__FILE__) . '/pages/'.$request.'.php')) {
-	$request = 'bio';
-}
+// get a model manager
+$modelManager = new DccLib\ModelManager('DccSite\\Models\\');
 
-// include our request
-require_once(dirname(__FILE__) . '/pages/' . $request . '.php');
-
-// do the "magic"
-echo show_site(get_page_content(), get_page_title());
+// run the request
+echo $requestManager->Run($viewManager, $modelManager);
 
 // get our lock file
 $f = fopen("/tmp/dccweb.lock", "w") or die();
@@ -31,3 +35,5 @@ if (flock($f, LOCK_EX)) {
 }
 
 fclose($f);
+
+exit();
