@@ -39,18 +39,13 @@ class RequestManager {
   public function Run($viewManager = null, $modelManager = null) {
     // create the controller
     $c = new $this->_controller();
-    
-    // is this actually a controller?
-    if (!is_a($c, 'Controller')) {
-      throw new Exceptions\InvalidController();
-    }
-    
+
     // inject the view manager into the controller
-    if (!is_null($viewManager) && is_a($viewManager, 'ViewManager')) {
+    if (!is_null($viewManager)) {
       $c->setViewManager($viewManager);
     }
     
-    if (!is_null($modelManager) && is_a($modelManager, 'ModelManager')) {
+    if (!is_null($modelManager)) {
       $c->setModelManager($modelManager);
     }
     
