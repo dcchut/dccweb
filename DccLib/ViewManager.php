@@ -9,7 +9,9 @@ class ViewManager {
   }
   
   public function Load($name, $vars = array()) {
-    $_view_name = $this->_namespace . ucfirst($name) . '.php';
+    // since we are loading actual files, have to change backslashes to forwardslashes
+    // for this to work undex *ux
+    $_view_name = strtr($this->_namespace . ucfirst($name), '\\', '/') . '.php';
     
     ob_start();
     
