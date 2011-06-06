@@ -41,16 +41,16 @@ class RequestManager {
     $c = new $this->_controller();
     
     // is this actually a controller?
-    if (!is_a($c, '\DccLib\Controller')) {
+    if (!is_a($c, 'Controller')) {
       throw new Exceptions\InvalidController();
     }
     
     // inject the view manager into the controller
-    if (!is_null($viewManager) && is_a($viewManager, '\DccLib\ViewManager')) {
+    if (!is_null($viewManager) && is_a($viewManager, 'ViewManager')) {
       $c->setViewManager($viewManager);
     }
     
-    if (!is_null($modelManager) && is_a($modelManager, '\DccLib\ModelManager')) {
+    if (!is_null($modelManager) && is_a($modelManager, 'ModelManager')) {
       $c->setModelManager($modelManager);
     }
     
