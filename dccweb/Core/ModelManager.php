@@ -1,5 +1,5 @@
 <?php
-namespace DccLib;
+namespace dccweb\Core;
 
 class ModelManager {
   protected $_namespace;

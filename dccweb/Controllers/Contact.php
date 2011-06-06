@@ -1,7 +1,7 @@
 <?php
-namespace DccSite\Controllers;
+namespace dccweb\Controllers;
 
-class Contact extends \DccSite\TemplateController {
+class Contact extends \dccweb\TemplateController {
   protected $title = 'contact';
   
   public function action_default() {

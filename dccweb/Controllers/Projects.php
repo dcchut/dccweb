@@ -1,7 +1,7 @@
 <?php
-namespace DccSite\Controllers;
+namespace dccweb\Controllers;
 
-class Projects extends \DccSite\TemplateController {
+class Projects extends \dccweb\TemplateController {
   protected $title = 'projects';
   
   public function action_default() {

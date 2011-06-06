@@ -1,7 +1,7 @@
 <?php
-namespace DccSite;
+namespace dccweb;
 
-abstract class TemplateController extends \DccLib\Controller {
+abstract class TemplateController extends Core\Controller {
   private $site_root   = '/';
   protected $template  = 'Template';
   protected $title     = 'dccweb';

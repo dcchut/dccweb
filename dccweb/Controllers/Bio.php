@@ -1,7 +1,7 @@
 <?php
-namespace DccSite\Controllers;
+namespace dccweb\Controllers;
 
-class Bio extends \DccSite\TemplateController {
+class Bio extends \dccweb\TemplateController {
   protected $title = 'bio';
   
   public function action_default() {

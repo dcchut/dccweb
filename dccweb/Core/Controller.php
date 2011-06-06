@@ -1,5 +1,5 @@
 <?php
-namespace DccLib;
+namespace dccweb\Core;
 
 abstract class Controller {
   private $_viewManager;

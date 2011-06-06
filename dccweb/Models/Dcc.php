@@ -1,5 +1,5 @@
 <?php
-namespace DccSite\Models;
+namespace dccweb\Models;
 
 class Dcc {
   // my age

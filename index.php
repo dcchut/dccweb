@@ -13,15 +13,15 @@ spl_autoload_register(function($class_name) {
 });
 
 // parse this URI
-$requestManager = new DccLib\RequestManager($_SERVER['REQUEST_URI'],
-                                                    'DccSite\\Controllers\\',
+$requestManager = new dccweb\Core\RequestManager($_SERVER['REQUEST_URI'],
+                                                    'dccweb\\Controllers\\',
                                                     'Bio');
                                                     
 // get a view manager
-$viewManager = new DccLib\ViewManager('DccSite\\Views\\');
+$viewManager = new dccweb\Core\ViewManager('dccweb\\Views\\');
 
 // get a model manager
-$modelManager = new DccLib\ModelManager('DccSite\\Models\\');
+$modelManager = new dccweb\Core\ModelManager('dccweb\\Models\\');
 
 // run the request
 echo $requestManager->Run($viewManager, $modelManager);

@@ -1,5 +1,5 @@
 <?php
-namespace DccLib\Exceptions;
+namespace dccweb\Core\Exceptions;
 
 class DefaultMessageException extends \Exception {
   protected $_message;
