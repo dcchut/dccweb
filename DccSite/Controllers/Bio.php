@@ -9,4 +9,8 @@ class Bio extends \DccSite\TemplateController {
                                   array('age' => 
                                         $this->mm()->Load('dcc')->getAge()));
   }
+  
+  public function action_secret() {
+    $this->content = $this->vm()->Load('BioSecret');
+  }
 }
