@@ -13,7 +13,7 @@ spl_autoload_register(function($class_name) {
 });
 
 // parse this URI
-$requestManager = new DccLib\RequestManager($_SERVER['PATH_INFO'],
+$requestManager = new DccLib\RequestManager($_SERVER['REQUEST_URI'],
                                                     'DccSite\\Controllers\\',
                                                     'Bio');
                                                     

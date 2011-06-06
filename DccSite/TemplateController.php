@@ -2,7 +2,7 @@
 namespace DccSite;
 
 abstract class TemplateController extends \DccLib\Controller {
-  private $site_root   = '/bio/';
+  private $site_root   = '/';
   protected $template  = 'Template';
   protected $title     = 'dccweb';
 
