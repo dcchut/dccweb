@@ -6,7 +6,7 @@ class RequestManager {
   protected $_method;
   protected $_args = array();
   
-  public function __construct($uri, Namespace $namespace, $default_controller) {
+  public function __construct($uri, NS $namespace, $default_controller) {
     // expand our URI
     $uri   = strtolower(ltrim($uri, '/'));
     $parts = explode('/', $uri);

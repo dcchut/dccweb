@@ -13,7 +13,7 @@ spl_autoload_register(function($class_name) {
 });
 
 // get our namespace object
-use dccwweb\Core\Namespace as ns;
+use \dccweb\Core\NS as ns;
 
 // parse this URI
 $requestManager = new dccweb\Core\RequestManager($_SERVER['REQUEST_URI'],

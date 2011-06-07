@@ -4,7 +4,7 @@ namespace dccweb\Core;
 class ViewManager {
   protected $_namespace;
   
-  public function __construct(Namespace $namespace) {
+  public function __construct(NS $namespace) {
     $this->_namespace = $namespace;
   }
   
