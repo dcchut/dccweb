@@ -6,19 +6,19 @@ class RequestManager {
   protected $_method;
   protected $_args = array();
   
-  public function __construct($uri, $namespace, $default_controller) {
+  public function __construct($uri, Namespace $namespace, $default_controller) {
     // expand our URI
     $uri   = strtolower(ltrim($uri, '/'));
     $parts = explode('/', $uri);
     
     // get the controller
-    $controller = $namespace . ucfirst($parts[0]);
+    $controller = $namespace->Get() . ucfirst($parts[0]);
     $method     = 'action_default';
     $args       = array();
       
     // does this exist?
     if (!class_exists($controller)) {
-      $controller = $namespace . ucfirst($default_controller);
+      $controller = $namespace->Get() . ucfirst($default_controller);
     } else {
       if (count($parts) > 1 && method_exists($controller, 'action_' . $parts[1])) {
         $method = 'action_' . $parts[1];

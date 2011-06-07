@@ -12,16 +12,19 @@ spl_autoload_register(function($class_name) {
   }
 });
 
+// get our namespace object
+use dccwweb\Core\Namespace as ns;
+
 // parse this URI
 $requestManager = new dccweb\Core\RequestManager($_SERVER['REQUEST_URI'],
-                                                    'dccweb\\Controllers\\',
+                                                    new ns(array('dccweb', 'Controllers')),
                                                     'Bio');
                                                     
 // get a view manager
-$viewManager = new dccweb\Core\ViewManager('dccweb\\Views\\');
+$viewManager = new dccweb\Core\ViewManager(new ns(array('dccweb', 'Views')));
 
 // get a model manager
-$modelManager = new dccweb\Core\ModelManager('dccweb\\Models\\');
+$modelManager = new dccweb\Core\ModelManager(new ns(array('dccweb', 'Models')));
 
 // run the request
 echo $requestManager->Run($viewManager, $modelManager);
