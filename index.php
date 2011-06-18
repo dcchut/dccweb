@@ -29,14 +29,7 @@ $modelManager = new dccweb\Core\ModelManager(new ns(array('dccweb', 'Models')));
 // run the request
 echo $requestManager->Run($viewManager, $modelManager);
 
-// get our lock file
-$f = fopen("/tmp/dccweb.lock", "w") or die();
-
-// increase the hit counter
-if (flock($f, LOCK_EX)) {
-	file_put_contents('hits', "\n", LOCK_EX | FILE_APPEND);
-}
-
-fclose($f);
+// removed hits counter - modified for pagoda
+// perhaps in future store this in a better place!
 
 exit();
