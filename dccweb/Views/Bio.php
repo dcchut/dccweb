@@ -12,3 +12,5 @@ as an undergraduate at the <a href="http://www.unimelb.edu.au">university of mel
 <p class="lspace">6/06/2011: changed entire site architecture, check out the new <a href="http://github.com/dcchut/dccweb">source</a></p> 
 
 <p class="lspace">19/06/2011: I was invited to participate in the <a href="http://www.pagodabox.com/">Pagoda Box</a> private beta, a "scalable PHP deployment platform".  For the moment (potentially until the beta ends), I'm hosting this bio using their services - its a pretty interesting idea.  Check out the <a href="https://github.com/dcchut/dccweb/tree/pagoda">pagoda</a> branch of this site on github for the (minimal) changes I made.</p>
+
+<p class="lspace">29/06/2011: started working fulltime, hip hip hurrah :D  uni timetable is also looking pretty good!</p>
