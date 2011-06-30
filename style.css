@@ -4,39 +4,27 @@ html {
 }
 
 body {
-	background-color: #EEEFE6;
 	font: 12pt verdana;
 }
 
-#main {
+#container {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px;
-	padding-top: 0px;
-	border: 1px solid #000000;
-	background-color: #E7D9EF;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	padding: 0;
+	padding-right: 50px;
 }
 
-#content {
-	background-color: #E1EFD9;
-	padding: 15px;
-	padding-bottom: 5px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	border: 1px solid #000000;
+#header_t, #header_b {
+    padding-left: 5px;
 }
 
-#top {
+#header_t {
 	background-color: #E1EFD9;
-	padding: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	border: 1px solid #000000;
+}
+
+#header_b {
+    background-color: #F6F6F6;
 }
 
 /* top text */
@@ -44,22 +32,24 @@ p.top {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font: 17pt verdana;
-	padding-bottom: 5px;
 }
 
 p.lspace {
 	line-height: 200%;
+	background-color: #F6F6F6;
 }
 
 div.mheading {
 	font: 15pt verdana;
+	background-color: #E1EFD9;
+	padding-left: 5px;
 }
 
 span.heading {
 	font-weight: bold;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 20pt;
 }
-
-
 
 /* make links <AWESOME> */
 a:link {

@@ -3,15 +3,19 @@
 	<head>
 		<title>dcchut - <?php echo $title; ?></title>
 		<link rel="stylesheet" type="text/css" href="<?php echo $site_root; ?>style.css" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Hammersmith+One&v2">
 	</head>
 	<body>
-		<div id="main">
-			<br />
-			<div id="top"><p class="top"><span class="heading">dcchut's profile</span> - <a href="<?php echo $site_root; ?>bio">bio</a>
+    <div id="container">
+		<div id="header">
+			<div id="header_t"><span class="heading">dcchut's profile</span></div>
+			<div id="header_b"><a href="<?php echo $site_root; ?>bio">bio</a>
 														  - <a href="<?php echo $site_root; ?>projects">projects</a> 
 														  - <a href="<?php echo $site_root; ?>contact">contact</a></p></div>
-			 <br />
-			 <div id="content"><?php echo $content; ?></div>
-		</div>
+        </div>
+        <div id="content">
+            <?php echo $content; ?>
+        </div>
+    </div>
 	</body>
 </html>
