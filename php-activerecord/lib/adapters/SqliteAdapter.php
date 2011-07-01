@@ -16,7 +16,7 @@ class SqliteAdapter extends Connection
 	protected function __construct($info)
 	{
         // who wrote this code? lol
-        $info->host = '/db/dccweb.db';
+        $info->host = dirname(__FILE__) . '/db/dccweb.db';
         
 		/*if (!file_exists($info->host))
 			throw new DatabaseException("Could not find sqlite db: $info->host");
