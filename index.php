@@ -18,7 +18,7 @@ require_once('php-activerecord/ActiveRecord.php');
 ActiveRecord\Config::initialize(function($cfg){
     $cfg->set_model_directory('dccweb/Models');
     $cfg->set_connections(array(
-        'development' => 'sqlite:///home/dcchut/dccweb/shared/db/dccweb.db'));
+        'development' => 'sqlite://./home/dcchut/dccweb/shared/db/dccweb.db'));
 });
 
 // get our namespace object
