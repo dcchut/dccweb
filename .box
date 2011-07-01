@@ -1,7 +1,0 @@
-shared_writable_dirs:
-    - /db
-    
-php_extensions:
-    - pdo
-    - pdo_sqlite
-    - sqlite
