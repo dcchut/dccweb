@@ -18,9 +18,9 @@ class SqliteAdapter extends Connection
         // who wrote this code? lol
         $info->host = '/home/dcchut/dccweb/shared/db/dccweb.db';
         
-		if (!file_exists($info->host))
+		/*if (!file_exists($info->host))
 			throw new DatabaseException("Could not find sqlite db: $info->host");
-
+        */
 		$this->connection = new PDO("sqlite:$info->host",null,null,static::$PDO_OPTIONS);
 	}
 
