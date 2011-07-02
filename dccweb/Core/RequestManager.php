@@ -13,7 +13,6 @@ class RequestManager {
 
         // get the controller
         $controller = $namespace->Get() . ucfirst($parts[0]);
-        $controller = 'Projects';
         $method     = 'action_default';
         $args       = array();
           
