@@ -1,0 +1,27 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>dcchut - <?php echo $this->title; ?></title>
+  <?php $this->headLink()->appendStylesheet('/bio/public/style.css')
+  						 ->appendStylesheet('http://fonts.googleapis.com/css?family=Hammersmith+One&v2');
+  	 	echo $this->headLink(); ?>
+</head>
+<body>
+    <div id="container">
+		<div id="header">
+			<div id="header_t"><span class="heading">dcchut's profile</span></div>
+			<div id="header_b">
+				<a href="<?php echo $this->url(array('controller' => 'bio')); ?>">bio</a>
+				- <a href="<?php echo $this->url(array('controller' => 'projects')); ?>">projects</a>
+				- <a href="<?php echo $this->url(array('controller' => 'contact')); ?>">contact</a>
+			</div>
+			
+        </div>
+        <div id="content">
+        	<div id="mheading"><?php echo $this->subTitle; ?></div>
+			<?php echo $this->layout()->content; ?>
+        </div>
+    </div>
+</body>
+</html>

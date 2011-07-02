@@ -1,0 +1,6 @@
+<?php $this->title = 'project';
+	  $this->subTitle = 'my projects'; ?>
+
+<?php foreach ($this->projects as $project): ?>
+<p class="lspace"><?php echo $project->content; ?></p>
+<?php endforeach; ?>

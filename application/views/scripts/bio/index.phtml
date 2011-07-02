@@ -1,0 +1,6 @@
+<?php $this->title = 'bio';
+	  $this->subTitle = 'my bio'; ?>
+
+<?php foreach ($this->posts as $post): ?>
+<p class="lspace"><?php echo $post->content; ?></p>
+<?php endforeach; ?>
