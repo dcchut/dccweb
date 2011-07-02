@@ -1,0 +1,2 @@
+document_root: /public
+default_gateway: index.php
