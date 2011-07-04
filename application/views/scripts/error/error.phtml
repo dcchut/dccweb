@@ -1,18 +1,21 @@
-<h1>An error occurred</h1>
-<h2><?php echo $this->message ?></h2>
+<?php $this->title = "error";
+			$this->subTitle = "an error has occured!";
+?>
+
+<p class="lspace"><?php echo strtolower($this->message) ?></p>
 
 <?php if (isset($this->exception)): ?>
-  
-<h3>Exception information:</h3>
-<p>
-    <b>Message:</b> <?php echo $this->exception->getMessage() ?>
+ 
+<p class="lspace"><b>exception information:</b><br />
+<?php echo $this->exception->getMessage() ?>
 </p>
 
-<h3>Stack trace:</h3>
+<p class="lspace"><b>stack trace:</b><br />
 <pre><?php echo $this->exception->getTraceAsString() ?>
-</pre>
+ </pre></p>
 
-<h3>Request Parameters:</h3>
+<p class="lspace"><b>request parameters:</b><br />
 <pre><?php echo $this->escape(var_export($this->request->getParams(), true)) ?>
-</pre>
+</pre></p>
+
 <?php endif ?>
