@@ -6,8 +6,79 @@
   <?php $this->headLink()->appendStylesheet('/css/style.css')
   						 ->appendStylesheet('http://fonts.googleapis.com/css?family=Hammersmith+One&v2');
   	 	echo $this->headLink(); ?>
+  <?php $this->headScript()->appendFile('http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js')
+                           ->appendFile('/js/history.adapter.jquery.js')
+                           ->appendFile('/js/history.js')
+                           ->appendFile('/js/history.html4.js')
+                           ->appendFile('/js/json2.js');
+        echo $this->headScript(); ?>
 </head>
 <body>
+    <script type="text/javascript">
+        $().ready(function(){
+            var History = window.History;
+            
+            if (!History.enabled) {
+                return false;
+            }
+            
+            function updatePage(url, data){
+                    var html = $(data);
+                    
+                    // the new page title
+                    var title = 'dcchut - ' + $('#load-title', html).text();
+                    
+                    // the new page subtitle
+                    var subtitle = $('#load-subtitle', html).text();
+                    
+                    // the page content
+                    var content = $('#load-content', html).html();
+                    
+                    // now remove this stuff
+                    html.remove();
+                    
+                    // punch it through
+                    History.replaceState({'url':url,'replace':1}, title, url);
+
+                    $('#mheading').text(subtitle);
+                    $('#icontent').html(content);
+            }
+            
+            var cache = [];
+            
+            // deal with state changes
+            History.Adapter.bind(window, 'statechange', function(){
+                var State = History.getState();
+                var url = State.data.url;
+                
+                // we dont want to handle replacements
+                if (State.data.replace == 1) {
+                    return;
+                }
+                
+                if (url in cache) {
+                    updatePage(url, cache[url]);
+                } else {
+                    // request the new page
+                    $.post(url + '?format=html', function(data){
+                        // save the data to the cache
+                        cache[url] = data;
+                        updatePage(url, data);
+                    });
+                }
+            });
+
+            // bind our nav links
+            $("#header_b a").click(function(ev){
+                ev.preventDefault();
+                
+                // push this state through
+                History.pushState({url:$(this).attr('href'),'replace':0},
+                   'dcchut',
+                   $(this).attr('href'));
+            });
+        });
+    </script>
     <div id="container">
 		<div id="header">
 			<div id="header_t"><span class="heading">dcchut's profile</span></div>
@@ -20,7 +91,7 @@
         </div>
         <div id="content">
         	<div id="mheading"><?php echo $this->subTitle; ?></div>
-			<?php echo $this->layout()->content; ?>
+			<div id="icontent"><?php echo $this->layout()->content; ?></div>
         </div>
     </div>
 </body>

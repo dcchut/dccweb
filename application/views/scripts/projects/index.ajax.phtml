@@ -1,0 +1,7 @@
+<div>
+    <div id="load-title">project</div>
+    <div id="load-subtitle">my projects</div>
+    <div id="load-content"><?php foreach ($this->projects as $project): ?>
+<p class="lspace"><?php echo $project->content; ?></p>
+<?php endforeach; ?></div>
+</div>

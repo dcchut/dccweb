@@ -4,3 +4,4 @@
 favicon.ico
 robots.txt
 *.sh
+/nbproject/

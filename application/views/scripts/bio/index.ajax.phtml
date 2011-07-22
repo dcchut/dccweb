@@ -1,0 +1,7 @@
+<div>
+    <div id="load-title">bio</div>
+    <div id="load-subtitle">my bio</div>
+    <div id="load-content"><?php foreach ($this->posts as $post): ?>
+    <p class="lspace"><?php echo $post->content; ?></p>
+    <?php endforeach; ?></div>
+</div>

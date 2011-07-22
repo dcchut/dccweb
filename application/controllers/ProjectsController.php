@@ -2,18 +2,17 @@
 
 class ProjectsController extends Zend_Controller_Action
 {
-
     public function init()
     {
-    	$project = new Application_Model_Project();
-    	$this->view->projects = $project->fetchAll();
+        $ajaxContext = $this->_helper->getHelper('AjaxContext');
+        $ajaxContext->addActionContext('index', 'html')
+                    ->initContext();
     }
 
     public function indexAction()
     {
-        // action body
+    	$project = new Application_Model_Project();
+    	$this->view->projects = $project->fetchAll();
     }
-
-
 }
 
