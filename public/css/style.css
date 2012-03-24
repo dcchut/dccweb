@@ -38,6 +38,7 @@ p.top {
 p.lspace {
 	line-height: 200%;
 	background-color: #F6F6F6;
+	padding-left: 5px;
 }
 
 #mheading {
