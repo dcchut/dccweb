@@ -1,6 +1,6 @@
 <?php
 
-class ProjectsController extends Zend_Controller_Action
+class NotesController extends Zend_Controller_Action
 {
     public function init()
     {
